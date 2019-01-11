@@ -4,9 +4,19 @@
 
 - Download and install docker in your system. [Download here](https://www.docker.com/get-started)
 
+- Install composer if you haven't here: [Composer](https://getcomposer.org/doc/00-intro.md)
+
 - Fork this project and clone in your system. Current version of laravel is 5.7.x
 
+- Run `composer install && cp .env.example .env`
+
 - Move to the root folder and run `docker-compose up -d`
+
+- Migrate your database and seed with:
+
+```php
+docker exec -it app php artisan migrate --seed
+```
 
 - Open your browser and go to [http://localhost:81](http://localhost:81)
 

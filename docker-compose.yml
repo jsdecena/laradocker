@@ -38,8 +38,7 @@ services:
       - "3306:3306"
     environment:
       MYSQL_DATABASE: homestead
-      MYSQL_USER: homestead
-      MYSQL_ROOT_PASSWORD: secret # ====== IMPORTANT: CHANGE THIS! ======
+      MYSQL_ROOT_PASSWORD: secret
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
